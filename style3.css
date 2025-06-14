@@ -1,0 +1,65 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    shape-outside: margin-box;
+    background: url(BookingBG.jpg) no-repeat center center/cover;
+    background-size: 118%;
+    display: flex;
+    position: initial;
+}
+.hotel-card, .thank-you, .booking-form {
+    background: wheat;
+    position: initial;
+    margin: 50px auto;
+    padding: 17px;
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+ 
+.booking-form h2 {
+    text-align: center;
+}
+
+.hotel-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.book-btn, button {
+    background: #3d5c50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+.rth {
+    background: #8cd0d7;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+
+.book-btn:hover {
+    background: #2a4479;
+    transition: scale(1.05);
+}
+
+input, textarea {
+    width: 95%;
+    padding: 8px;
+    margin: 8px 0;
+    border: -1px solid #94b4a8;
+    border-radius: 5px;
+}

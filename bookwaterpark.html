@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="adventurestyle.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">Explore Adventure Park</div>
+                <ul class="nav-list">
+                    <li><a href="adventure.html#home">Home</a></li>
+                    <li><a href="adventure.html#card">Waterpark</a></li>
+                    <li><a href="bookwaterpark.html#">Booking</a></li>
+                    <li><a href="aboutwaterpark.html">About Parks</a></li>   
+                </ul>
+                  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            </nav>
+        </header>
+        
+        <section class="booking-section" id="booking">
+            <section class="booking-section-form">
+    <h2>Book Your Tickets</h2>
+    <form id="bookingForm" action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+
+      <div class="split-input">
+        <input type="number" name="adults" placeholder="No. of Adults" min="0" required>
+        <input type="number" name="children" placeholder="No. of Children" min="0" required>
+      </div>
+      
+      <select required>
+        <option value="">Select Park</option>
+        <option>Wonderla, Bangalore</option>
+        <option>Imagicaa, Mumbai</option>
+        <option>Oysters Beach, Gurgaon</option>
+        <option>Wonder la Cochin</option>
+        <option>World of Wonder</option>
+        <option>GRS Fantasy Park</option>
+        <option>Queensland</option>
+        <option>Ocean Park</option>
+        <option>Fun 'n' Food Village</option>
+        <option>Dreamworld Water Park</option>
+        <option>Aquatica Water Park</option>
+        <option>MGM Dizzee World</option>
+        <option>Maniar Wonderland</option>
+        <option>Funtasia Island</option>
+        <option>Splash Water Park</option>
+        <option>Funcity</option>
+      </select>
+      <input type="date" name="VisitDate" required>
+      <select name="timeslot" required>
+        <option value="">Select Time Slot</option>
+        <option>10:00 AM - 01:00 PM</option>
+        <option>01:00 PM - 04:00 PM</option>
+        <option>04:00 PM - 06:00 PM</option>
+      </select>
+      <!-- <textarea name="message" rows="4" placeholder="Any spacial instruction or queries?"></textarea> -->
+      <button class="btn" type="submit">Confirm Booking</button>
+    </form> </section>
+</section> 
+   
+    <!-- Thank You Popup -->
+  <div class="popup" id="thankYouPopup">
+    <div class="popup-content">
+      <h3>🎉 Thank You!</h3>
+      <p>We will received your request. we'll contact you soon.</p>
+      <button onclick="closePopup()">OKAY</button>
+    </div>
+  </div>
+        <script>
+  const form = document.getElementById('bookingForm');
+  const popup = document.getElementById('thankYouPopup');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent page refresh
+    popup.style.display = 'flex'; // Show popup
+    form.reset(); // Optional: clear the form
+  });
+
+  function closePopup() {
+    popup.style.display = 'none';
+  }
+</script></form>
+    </body>
+</html>
